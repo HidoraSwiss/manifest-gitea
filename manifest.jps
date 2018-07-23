@@ -1,1 +1,18 @@
 
+type: install
+name: Gitea
+categories: ["apps/content-management"]
+displayName: Gitea
+homepage: https://github.com/HidoraSwiss/manifest-gitea
+logo: https://gitea.io/images/gitea.png
+description: Gitea is a community managed fork of Gogs, lightweight code hosting solution written in Go and published under the MIT license
+ssl: true
+
+nodes:
+  - image: gitea/gitea
+    count: 1
+    cloudlets: 16
+    nodeGroup: cp
+
+success: | 
+ **Your environment Gitea has been installed successfully.**
