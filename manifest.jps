@@ -13,6 +13,11 @@ nodes:
     count: 1
     cloudlets: 16
     nodeGroup: cp
+   
+  - nodeType: mysql
+    count: 1
+    cloudlets: 8
+    nodeGroup: sqldb
 
 success: | 
  **Your environment Gitea has been installed successfully.**
